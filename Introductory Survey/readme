@@ -1,0 +1,63 @@
+Assignment 0 readme File
+
+------------------------------------------------------------------------
+What is your name?
+Seungho Lee
+
+
+------------------------------------------------------------------------
+What authorized sources of information did you use to complete the
+assignment? COPY THE LIST of authorized sources of information given
+in the "Policies" web page (also available on armlab in the file
+~cos217/AuthorizedSourcesList ) to this section of the readme file,
+and edit it as appropriate.
+
+https://www.cs.princeton.edu/courses/archive/spring25/cos217/assignment0.php
+https://www.youtube.com/watch?v=z0My6q-cGR4&t=1171s
+https://www.youtube.com/watch?v=c_5b2oSye-s 
+TA help
+
+------------------------------------------------------------------------
+What unauthorized sources of information did you use to complete the
+assignment? List any unauthorized sources of information that you used
+to complete the assignment, and describe how you used them. The course
+"Policies" web page defines unauthorized sources of information, and
+any source that you have used but not listed in the authorized sources
+should be included here. Please note that using an unauthorized source
+may trigger a course penalty, and depending on the nature of the
+interaction, may additionally require the interaction being reported
+to the Committee on Discipline. Write "None" if you used no
+unauthorized sources of information.
+
+None
+
+------------------------------------------------------------------------
+In fulfillment of the requirement from section 2.4.3 of the Academic
+Regulations in Princeton's Rights, Rules, Responsibilities guide,
+enter your name in the space below the following affirmation:
+
+This paper represents my own work in accordance with University
+regulations.
+Seungho Lee
+
+------------------------------------------------------------------------
+What is your assessment of the assignment? Was it helpful? Was it fun?
+
+It was very helpful in introducing me to bash and preparing me for future content. It was a lot of fun!
+
+------------------------------------------------------------------------
+(optional) What information can you provide about your submission that
+will help your grader to grade it in the most favorable light? In
+particular, what bugs are in your submission?
+
+
+
+------------------------------------------------------------------------
+What bash command(s) did you use to generate the files in Step 3.2?
+
+for i in {1..11}; do for j in {a..z}; do printf "$j\n" >| file$i$j.txt; done; done
+
+------------------------------------------------------------------------
+What is your resulting MD5 checksum from Step 3.3 (NOT 3.2!)?
+
+MD5: c75830432c82d357f3e8628ef843f129
