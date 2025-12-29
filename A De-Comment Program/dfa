@@ -1,0 +1,38 @@
+NORMAL (accept) <-- the start state
+    /: SLASH
+    ": IN_STRING
+    ':IN_CHAR
+    other: NORMAL
+
+SLASH (accept) 
+    *: IN_COMMENT
+    /: SLASH
+    ": IN_STRING
+    ': IN_CHAR
+    other: NORMAL
+
+IN_COMMENT (reject)
+    *: STAR 
+    other: IN_COMMENT
+
+STAR (reject)
+    *: STAR
+    /: NORMAL
+    other: IN_COMMENT
+
+IN_STRING (accept)
+    \: ESCAPED_IN_STRING
+    ": NORMAL
+    other: IN_STRING
+
+ESCAPED_IN_STRING (accept)
+    other: IN_STRING
+
+IN_CHAR (accept)
+    \: ESCAPED_IN_CHAR
+    ': NORMAL
+    other: IN_CHAR
+
+ESCAPED_IN_CHAR (accept)
+    other: IN_CHAR
+
