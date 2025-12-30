@@ -1,0 +1,199 @@
+Assignment 5 readme File
+
+------------------------------------------------------------------------
+Student 1: What is your name?
+
+Ryo Mitsuhashi
+
+------------------------------------------------------------------------
+Student 2: What is your name?
+
+Seungho Lee
+
+------------------------------------------------------------------------
+Student 1: What authorized sources of information did you use to
+complete the assignment? COPY THE LIST of authorized sources of
+information given in the "Policies" web page (also available on armlab
+in the file ~cos217/AuthorizedSourcesList ) to this section of the
+readme file, and edit it as appropriate.
+
+The course's lectures.
+The course's precepts.
+The course's website.
+Documents that are referenced directly by the course's website. 
+ - The course's lecture slides. 
+ - The precept handouts.
+The course's textbooks and reference manuals.
+The course's current staff members outside of class time through Ed.
+
+------------------------------------------------------------------------
+Student 2: What authorized sources of information did you use to
+complete the assignment? COPY THE LIST of authorized sources of
+information given in the "Policies" web page (also available on armlab
+in the file ~cos217/AuthorizedSourcesList ) to this section of the
+readme file, and edit it as appropriate.
+
+COS 217 lecture materials.
+COS 217 precept materials.
+COS 217 website.
+The man pages on the armlab cluster.
+COS 217 staff and/or current students on Ed.
+
+------------------------------------------------------------------------
+Student 1: What unauthorized sources of information did you use to
+complete the assignment? List any unauthorized sources of information
+that you used to complete the assignment, and describe how you used
+them. The course "Policies" web page defines unauthorized sources of
+information, and any source that you have used but not listed in the
+authorized sources should be included here. Please note that using an
+unauthorized source may trigger a course penalty, and depending on the
+nature of the interaction, may additionally require the interaction
+being reported to the Committee on Discipline. Write "None" if you used
+no unauthorized sources of information.
+
+None
+
+------------------------------------------------------------------------
+Student 2: What unauthorized sources of information did you use to
+complete the assignment? List any unauthorized sources of information
+that you used to complete the assignment, and describe how you used
+them. The course "Policies" web page defines unauthorized sources of
+information, and any source that you have used but not listed in the
+authorized sources should be included here. Please note that using an
+unauthorized source may trigger a course penalty, and depending on the
+nature of the interaction, may additionally require the interaction
+being reported to the Committee on Discipline. Write "None" if you used
+no unauthorized sources of information.
+
+None
+
+------------------------------------------------------------------------
+Student 1: In fulfillment of the requirement from section 2.4.3 of the
+Academic Regulations in Princeton's Rights, Rules, Responsibilities
+guide, enter your name in the space below the following affirmation:
+
+This paper represents my own work in accordance with University
+regulations.
+
+/s/ Ryo Mitsuhashi
+
+------------------------------------------------------------------------
+Student 2: In fulfillment of the requirement from section 2.4.3 of the
+Academic Regulations in Princeton's Rights, Rules, Responsibilities
+guide, enter your name in the space below the following affirmation:
+
+This paper represents my own work in accordance with University
+regulations.
+
+/s/ Seungho Lee
+
+------------------------------------------------------------------------
+Student 1: What is your assessment of the assignment? Was it helpful?
+Was it fun?
+
+It was more difficult to debug than C but helped my understanding on 
+the material a lot.
+
+------------------------------------------------------------------------
+Student 2: What is your assessment of the assignment? Was it helpful?
+Was it fun?
+
+It was a lot of new material as we delved into assembly language 
+which is very different from C programming. 
+It was tedious but I learned a lot.
+
+------------------------------------------------------------------------
+(optional) What information can you provide about your submission that
+will help your grader to grade it in the most favorable light? In
+particular, what bugs are in your submission?
+
+bigintaddoptopt.s sometimes beats the compiler and sometimes not.
+
+------------------------------------------------------------------------
+What is your mywc program test plan?
+
+Boundary Tests:
+mywc_boundary_consecutive_newline.txt: 
+    This file consists of a sentence followed by multiple consecutive 
+    newlines followed by another sentence. This tests whether having 
+    x consecutive newlines will increase the line count by exactly 
+    x amount. 
+mywc_boundary_newline_character.txt: 
+    This file consits of 10 consecutive newlines with no other 
+    characters. This is to test whether the newline is counted as a 
+    character (so in the output, the line count and character count 
+    should be equal).
+mywc_boundary_consecutive_spaces.txt: 
+    This file consists of a setence followed by a newline followed by 
+    first half of the 2nd sentence followed by multiple consecutive 
+    spaces followed by the second half of the second sentence. 
+    This test is to verify that the program does not increase the 
+    number of words when multiple consecutive spaces are present.
+mywc_boundary_blank.txt: 
+    This file is a blank file. This is to test if the program outputs 
+    0 lines, 0 words, 0 characters (initial value for all new empty 
+    files).
+mywc_boundary_only_word.txt: 
+    This file only consists of one word and nothing else (no space at 
+    the end). This is to verify that the program increases the word 
+    count even if the word has not ended (space was not pressed after 
+    the word).
+mywc_boundary_spaces.txt:
+    This file only consists of ten spaces and a new line at the end of 
+    the file. This is to verify that the program does not increase 
+    word count if there is no nonspace character.
+
+Statement Tests:
+mywc_statement_lCharCount.txt: 
+    This file consists of one "word". It tests if lCharCount increases 
+    for every character (excluding '\0'). It causes the computer to 
+    execute line 32, 45, 53, 55 in mywc.c.
+mywc_statement_lWordCount.txt: 
+    This file consists of sentences, newline characters, multiple 
+    consecutive spaces, and tab characters. It tests if lWordCount 
+    increases if the character is a whitespace character right after 
+    a non-whitespace character. Any whitespace character that comes 
+    after the first space whitespace character does not increase 
+    lWordCount. \t and \n counts as one whitespace character. 
+    It causes the computer to execute line 32, 38, 39, 45, 49, 55.
+mywc_statement_whitespace_word_newline.txt: 
+    This file consists of words scattered due to newlines. It tests to 
+    cover whtiespace transitions, word detections, and newline 
+    detections. It causes the computer to execute line 32, 38, 39, 45, 
+    49, 53, 55 in mywc.c.
+mywc_statement_long_line.txt: 
+    This file consists of 1000 single-character words with a space that 
+    follows each word. It tests to see if the program can handla very 
+    long line without a newline. It causes the computer to execute line 
+    32, 38, 39, 45, 55.
+mywc_statement_whitespace_newline.txt: 
+    This file consists of one word followed by a space followed by a 
+    newline. It tests to verify that the program recognizes a space 
+    followed by a newline (both are whitespaces). It causes the computer
+    to execute lines 32, 38, 39, 44, 49, 55.
+
+Stress Tests:
+mywc_stress_line_character.txt: 
+    This file consists of 1000 lines with 50 non-whitespace characters 
+    per line. It tests the upper bound of allowed file size.
+mywc_stress_character.txt: 
+    This file consists of 50000 non-whitespace characters. This tests 
+    to see if a very long word is counted as a single word. 
+mywc_stress_random.txt:
+    This file consists of 10000 pseudo random integers without any space
+    inbetween. It tests that it can read a large number of 
+    random sequence of integers.
+
+------------------------------------------------------------------------
+What are the CPU times consumed by the programs from Parts 2a, 2b, 2d,
+2e, and 2f to compute fib(250000) on armlab? Fill in the blanks.
+
+Part 2a:  5.236678 seconds
+
+Part 2b:  2.219170 seconds
+
+Part 2d:  5.247572 seconds
+
+Part 2e:  2.594102 seconds
+
+Part 2f:  0.507298 seconds

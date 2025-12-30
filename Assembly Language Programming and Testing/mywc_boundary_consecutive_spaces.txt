@@ -1,0 +1,2 @@
+Having multiple spaces in a row should not increase the number of words. 
+This test has              18 words.
