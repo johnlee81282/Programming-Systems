@@ -1,0 +1,701 @@
+Assignment 4 readme File
+
+------------------------------------------------------------------------
+Student 1: What is your name?
+
+Ryo Mitsuhashi
+
+------------------------------------------------------------------------
+Student 2: What is your name?
+
+Seungho Lee
+
+------------------------------------------------------------------------
+Student 1: What authorized sources of information did you use to
+complete the assignment? COPY THE LIST of authorized sources of
+information given in the "Policies" web page (also available on armlab
+in the file ~cos217/AuthorizedSourcesList ) to this section of the
+readme file, and edit it as appropriate.
+
+- The course's lectures.
+- The course's precepts.
+- The course's website.
+- Documents that are referenced directly by the course's website. 
+   - The course's lecture slides.
+   - The precept handouts.
+- The course's current staff members outside of class time through 
+meetings.
+- The course's current staff members outside of class time through Ed.
+
+------------------------------------------------------------------------
+Student 2: What authorized sources of information did you use to
+complete the assignment? COPY THE LIST of authorized sources of
+information given in the "Policies" web page (also available on armlab
+in the file ~cos217/AuthorizedSourcesList ) to this section of the
+readme file, and edit it as appropriate.
+
+COS 217 lecture materials.
+COS 217 precept materials.
+COS 217 website.
+The man pages on the armlab cluster.
+COS 217 staff and/or current students on Ed.
+
+------------------------------------------------------------------------
+Student 1: What unauthorized sources of information did you use to
+complete the assignment? List any unauthorized sources of information
+that you used to complete the assignment, and describe how you used
+them. The course "Policies" web page defines unauthorized sources of
+information, and any source that you have used but not listed in the
+authorized sources should be included here. Please note that using an
+unauthorized source may trigger a course penalty, and depending on the
+nature of the interaction, may additionally require the interaction
+being reported to the Committee on Discipline. Write "None" if you used
+no unauthorized sources of information.
+
+None
+
+------------------------------------------------------------------------
+Student 2: What unauthorized sources of information did you use to
+complete the assignment? List any unauthorized sources of information
+that you used to complete the assignment, and describe how you used
+them. The course "Policies" web page defines unauthorized sources of
+information, and any source that you have used but not listed in the
+authorized sources should be included here. Please note that using an
+unauthorized source may trigger a course penalty, and depending on the
+nature of the interaction, may additionally require the interaction
+being reported to the Committee on Discipline. Write "None" if you used
+no unauthorized sources of information.
+
+None
+
+------------------------------------------------------------------------
+Student 1: In fulfillment of the requirement from section 2.4.3 of the
+Academic Regulations in Princeton's Rights, Rules, Responsibilities
+guide, enter your name in the space below the following affirmation:
+
+This paper represents my own work in accordance with University
+regulations.
+
+/s/ Ryo Mitsuhashi
+
+------------------------------------------------------------------------
+Student 2: In fulfillment of the requirement from section 2.4.3 of the
+Academic Regulations in Princeton's Rights, Rules, Responsibilities
+guide, enter your name in the space below the following affirmation:
+
+This paper represents my own work in accordance with University
+regulations.
+
+/s/ Seungho Lee
+
+------------------------------------------------------------------------
+Student 1: What is your assessment of the assignment? Was it helpful?
+Was it fun?
+
+It was really hard but definitely helpful in learning debugging.
+
+------------------------------------------------------------------------
+Student 2: What is your assessment of the assignment? Was it helpful?
+Was it fun?
+
+It was very tedious and I had to work on catching small details. It was 
+a very difficult assignment. However, I was able to learn a lot. 
+
+------------------------------------------------------------------------
+(optional) What information can you provide about your submission that
+will help your grader to grade it in the most favorable light? In
+particular, what bugs are in your submission?
+
+We do not think there is any bugs. We decided to have three types of 
+nodes, files, directories, and general nodes in order to decrease the 
+number of duplicate functions in nodeFT.
+
+------------------------------------------------------------------------
+What warnings does splint generate for Part 2's checker, and what are
+your disagreements with them? Copy the splint warnings here, and
+express your disagreement after each warning. If there are no
+warnings, then write "None."
+
+// Since the disagrement with all the warnings are the same, I will
+   just note it after all the warnings.
+
+path.h:24:5: Function Path_new declared but not defined
+A function or variable is declared, but not defined in any source code 
+      file.
+(Use -declundef to inhibit warning)
+path.h:33:5: Function Path_dup declared but not defined
+path.h:44:5: Function Path_prefix declared but not defined
+path.h:47:6: Function Path_free declared but not defined
+path.h:50:13: Function Path_getPathname declared but not defined
+path.h:56:8: Function Path_getStrLength declared but not defined
+path.h:63:5: Function Path_comparePath declared but not defined
+path.h:70:5: Function Path_compareString declared but not defined
+path.h:77:8: Function Path_getDepth declared but not defined
+path.h:86:8: Function Path_getSharedPrefixDepth declared but not defined
+path.h:94:13: Function Path_getComponent declared but not defined
+nodeDT.h:29:5: Function Node_new declared but not defined
+nodeDT.h:36:8: Function Node_free declared but not defined
+nodeDT.h:39:8: Function Node_getPath declared but not defined
+nodeDT.h:50:9: Function Node_hasChild declared but not defined
+nodeDT.h:54:8: Function Node_getNumChildren declared but not defined
+nodeDT.h:62:5: Function Node_getChild declared but not defined
+nodeDT.h:69:8: Function Node_getParent declared but not defined
+nodeDT.h:76:5: Function Node_compare declared but not defined
+nodeDT.h:85:7: Function Node_toString declared but not defined
+dynarray.h:21:12: Function DynArray_new declared but not defined
+dynarray.h:27:6: Function DynArray_free declared but not defined
+dynarray.h:33:8: Function DynArray_getLength declared but not defined
+dynarray.h:39:7: Function DynArray_get declared but not defined
+dynarray.h:46:7: Function DynArray_set declared but not defined
+dynarray.h:55:5: Function DynArray_add declared but not defined
+dynarray.h:63:5: Function DynArray_addAt declared but not defined
+dynarray.h:70:7: Function DynArray_removeAt declared but not defined
+dynarray.h:78:6: Function DynArray_toArray declared but not defined
+dynarray.h:87:26: Function DynArray_map declared but not defined
+dynarray.h:98:26: Function DynArray_sort declared but not defined
+dynarray.h:113:27: Function DynArray_search declared but not defined
+dynarray.h:129:28: Function DynArray_bsearch declared but not defined
+checkerDT.h:17:9: Function exported but not used outside checkerDT:
+                         CheckerDT_Node_isValid
+A declaration is exported, but not used outside this module. Declaration 
+can use static qualifier. (Use -exportlocal to inhibit warning)
+checkerDT.c:57:1: Definition of CheckerDT_Node_isValid
+
+All the functions mentioned are defined/used in a separate c file, so
+the warning does not apply.
+
+------------------------------------------------------------------------
+What warnings does critTer generate on checkerDT.c, and what are your
+disagreements with them? Copy the critTer warnings here, and express
+your disagreement after each warning. If there are no warnings, then
+write "None."
+
+// Since the disagrement with all the warnings are the same, I will
+   just note it after all the warnings.
+   
+checkerDT.c: line 87: low priority: 
+A loop should consist of fewer than 35 lines;
+this loop consists of 41 lines; consider refactoring
+
+checkerDT.c: line 121: low priority: 
+This area is deeply nested at level 4, consider refactoring
+
+checkerDT.c: line 118: low priority: 
+This area is deeply nested at level 4, consider refactoring
+
+A warning on long loops or deeply nested code can be ignored.
+
+------------------------------------------------------------------------
+What warnings does splint generate on your Part 3 code, and what are
+your disagreements with them? Copy the splint warnings here, and
+express your disagreement after each warning. If there are no
+warnings, then write "None."
+
+ - checkerFT.h
+path.h:24:5: Function Path_new declared but not defined
+A function or variable is declared, but not defined in any source code 
+      file.
+(Use -declundef to inhibit warning)
+path.h:33:5: Function Path_dup declared but not defined
+path.h:44:5: Function Path_prefix declared but not defined
+path.h:47:6: Function Path_free declared but not defined
+path.h:50:13: Function Path_getPathname declared but not defined
+path.h:56:8: Function Path_getStrLength declared but not defined
+path.h:63:5: Function Path_comparePath declared but not defined
+path.h:70:5: Function Path_compareString declared but not defined
+path.h:77:8: Function Path_getDepth declared but not defined
+path.h:86:8: Function Path_getSharedPrefixDepth declared but not defined
+path.h:94:13: Function Path_getComponent declared but not defined
+nodeFT.h:31:5: Function Node_dir_new declared but not defined
+nodeFT.h:47:5: Function Node_file_new declared but not defined
+nodeFT.h:55:8: Function Node_dir_free declared but not defined
+nodeFT.h:61:6: Function Node_file_free declared but not defined
+nodeFT.h:66:8: Function Node_dir_generic declared but not defined
+nodeFT.h:71:8: Function Node_file_generic declared but not defined
+nodeFT.h:76:8: Function Node_getPath declared but not defined
+nodeFT.h:87:9: Function Node_dir_hasChild declared but not defined
+nodeFT.h:91:8: Function Node_dir_getNumChildren declared but not defined
+nodeFT.h:102:9: Function Node_file_hasChild declared but not defined
+nodeFT.h:106:8: Function Node_file_getNumChildren declared but not 
+      defined
+nodeFT.h:114:5: Function Node_dir_getChild declared but not defined
+nodeFT.h:123:5: Function Node_file_getChild declared but not defined
+nodeFT.h:130:11: Function Node_getParent declared but not defined
+nodeFT.h:135:8: Function Node_file_getSize declared but not defined
+nodeFT.h:140:7: Function Node_file_getContent declared but not defined
+nodeFT.h:146:7: Function Node_file_replaceContent declared but not 
+      defined
+nodeFT.h:154:5: Function Node_compare declared but not defined
+nodeFT.h:162:5: Function Node_compareString declared but not defined
+nodeFT.h:171:7: Function Node_toString declared but not defined
+
+All the errors above are not applicable since I defined those functions
+in different c files.
+
+checkerFT.h:15:9: Function CheckerFT_NodeDir_isValid declared but not 
+      defined
+checkerFT.h:22:9: Function CheckerFT_NodeFile_isValid declared but not 
+      defined
+checkerFT.h:33:9: Function CheckerFT_isValid declared but not defined
+checkerFT.h:15:9: Function CheckerFT_NodeDir_isValid exported but not 
+      declared in header file
+  A declaration is exported, but does not appear in a header file. (Use
+  -exportheader to inhibit warning)
+checkerFT.h:22:9: Function CheckerFT_NodeFile_isValid exported but not 
+      declared in header file
+checkerFT.h:33:9: Function CheckerFT_isValid exported but not declared 
+      in header file
+
+I have declared all these functions in this header file but defined 
+them in a separate c file.
+
+ - checkerFT.c
+ path.h:24:5: Function Path_new declared but not defined
+ A function or variable is declared, but not defined in any source code 
+      file.
+ (Use -declundef to inhibit warning)
+path.h:33:5: Function Path_dup declared but not defined
+path.h:44:5: Function Path_prefix declared but not defined
+path.h:47:6: Function Path_free declared but not defined
+path.h:50:13: Function Path_getPathname declared but not defined
+path.h:56:8: Function Path_getStrLength declared but not defined
+path.h:63:5: Function Path_comparePath declared but not defined
+path.h:70:5: Function Path_compareString declared but not defined
+path.h:77:8: Function Path_getDepth declared but not defined
+path.h:86:8: Function Path_getSharedPrefixDepth declared but not defined
+path.h:94:13: Function Path_getComponent declared but not defined
+nodeFT.h:31:5: Function Node_dir_new declared but not defined
+nodeFT.h:47:5: Function Node_file_new declared but not defined
+nodeFT.h:55:8: Function Node_dir_free declared but not defined
+nodeFT.h:61:6: Function Node_file_free declared but not defined
+nodeFT.h:66:8: Function Node_dir_generic declared but not defined
+nodeFT.h:71:8: Function Node_file_generic declared but not defined
+nodeFT.h:76:8: Function Node_getPath declared but not defined
+nodeFT.h:87:9: Function Node_dir_hasChild declared but not defined
+nodeFT.h:91:8: Function Node_dir_getNumChildren declared but not defined
+nodeFT.h:102:9: Function Node_file_hasChild declared but not defined
+nodeFT.h:106:8: Function Node_file_getNumChildren declared but not 
+      defined
+nodeFT.h:114:5: Function Node_dir_getChild declared but not defined
+nodeFT.h:123:5: Function Node_file_getChild declared but not defined
+nodeFT.h:130:11: Function Node_getParent declared but not defined
+nodeFT.h:135:8: Function Node_file_getSize declared but not defined
+nodeFT.h:140:7: Function Node_file_getContent declared but not defined
+nodeFT.h:146:7: Function Node_file_replaceContent declared but not 
+      defined
+nodeFT.h:154:5: Function Node_compare declared but not defined
+nodeFT.h:162:5: Function Node_compareString declared but not defined
+nodeFT.h:171:7: Function Node_toString declared but not defined
+dynarray.h:21:12: Function DynArray_new declared but not defined
+dynarray.h:27:6: Function DynArray_free declared but not defined
+dynarray.h:33:8: Function DynArray_getLength declared but not defined
+dynarray.h:39:7: Function DynArray_get declared but not defined
+dynarray.h:46:7: Function DynArray_set declared but not defined
+dynarray.h:55:5: Function DynArray_add declared but not defined
+dynarray.h:63:5: Function DynArray_addAt declared but not defined
+dynarray.h:70:7: Function DynArray_removeAt declared but not defined
+dynarray.h:78:6: Function DynArray_toArray declared but not defined
+dynarray.h:87:26: Function DynArray_map declared but not defined
+dynarray.h:98:26: Function DynArray_sort declared but not defined
+dynarray.h:113:27: Function DynArray_search declared but not defined
+dynarray.h:129:28: Function DynArray_bsearch declared but not defined
+
+All the errors above are not applicable since I defined those functions
+in different c files.
+
+checkerFT.h:15:9: Function exported but not used outside checkerFT:
+                    CheckerFT_NodeDir_isValid
+ A declaration is exported, but not used outside this module. 
+ Declaration can use static qualifier. 
+ (Use -exportlocal to inhibit warning)
+checkerFT.c:58:1: Definition of CheckerFT_NodeDir_isValid
+checkerFT.h:22:9: Function exported but not used outside checkerFT:
+                    CheckerFT_NodeFile_isValid
+checkerFT.c:100:1: Definition of CheckerFT_NodeFile_isValid
+
+I used these functions outside this file.
+
+- ft.c
+dynarray.h:21:12: Function DynArray_new declared but not defined
+A function or variable is declared, but not defined in any source code 
+      file.
+  (Use -declundef to inhibit warning)
+dynarray.h:27:6: Function DynArray_free declared but not defined
+dynarray.h:33:8: Function DynArray_getLength declared but not defined
+dynarray.h:39:7: Function DynArray_get declared but not defined
+dynarray.h:46:7: Function DynArray_set declared but not defined
+dynarray.h:55:5: Function DynArray_add declared but not defined
+dynarray.h:63:5: Function DynArray_addAt declared but not defined
+dynarray.h:70:7: Function DynArray_removeAt declared but not defined
+dynarray.h:78:6: Function DynArray_toArray declared but not defined
+dynarray.h:87:26: Function DynArray_map declared but not defined
+dynarray.h:98:26: Function DynArray_sort declared but not defined
+dynarray.h:113:27: Function DynArray_search declared but not defined
+dynarray.h:129:28: Function DynArray_bsearch declared but not defined
+path.h:24:5: Function Path_new declared but not defined
+path.h:33:5: Function Path_dup declared but not defined
+path.h:44:5: Function Path_prefix declared but not defined
+path.h:47:6: Function Path_free declared but not defined
+path.h:50:13: Function Path_getPathname declared but not defined
+path.h:56:8: Function Path_getStrLength declared but not defined
+path.h:63:5: Function Path_comparePath declared but not defined
+path.h:70:5: Function Path_compareString declared but not defined
+path.h:77:8: Function Path_getDepth declared but not defined
+path.h:86:8: Function Path_getSharedPrefixDepth declared but not defined
+path.h:94:13: Function Path_getComponent declared but not defined
+nodeFT.h:31:5: Function Node_dir_new declared but not defined
+nodeFT.h:47:5: Function Node_file_new declared but not defined
+nodeFT.h:55:8: Function Node_dir_free declared but not defined
+nodeFT.h:61:6: Function Node_file_free declared but not defined
+nodeFT.h:66:8: Function Node_dir_generic declared but not defined
+nodeFT.h:71:8: Function Node_file_generic declared but not defined
+nodeFT.h:76:8: Function Node_getPath declared but not defined
+nodeFT.h:87:9: Function Node_dir_hasChild declared but not defined
+nodeFT.h:91:8: Function Node_dir_getNumChildren declared but not defined
+nodeFT.h:102:9: Function Node_file_hasChild declared but not defined
+nodeFT.h:106:8: Function Node_file_getNumChildren declared but not 
+      defined
+nodeFT.h:114:5: Function Node_dir_getChild declared but not defined
+nodeFT.h:123:5: Function Node_file_getChild declared but not defined
+nodeFT.h:130:11: Function Node_getParent declared but not defined
+nodeFT.h:135:8: Function Node_file_getSize declared but not defined
+nodeFT.h:140:7: Function Node_file_getContent declared but not defined
+nodeFT.h:146:7: Function Node_file_replaceContent declared but not 
+      defined
+nodeFT.h:154:5: Function Node_compare declared but not defined
+nodeFT.h:162:5: Function Node_compareString declared but not defined
+nodeFT.h:171:7: Function Node_toString declared but not defined
+checkerFT.h:15:9: Function CheckerFT_NodeDir_isValid declared but not 
+      defined
+checkerFT.h:22:9: Function CheckerFT_NodeFile_isValid declared but not 
+      defined
+checkerFT.h:33:9: Function CheckerFT_isValid declared but not defined
+
+All the errors above are not applicable since I defined those functions
+in different c files.
+
+ - nodeFT.h
+path.h:24:5: Function Path_new declared but not defined
+A function or variable is declared, but not defined in any source code file.
+(Use -declundef to inhibit warning)
+path.h:33:5: Function Path_dup declared but not defined
+path.h:44:5: Function Path_prefix declared but not defined
+path.h:47:6: Function Path_free declared but not defined
+path.h:50:13: Function Path_getPathname declared but not defined
+path.h:56:8: Function Path_getStrLength declared but not defined
+path.h:63:5: Function Path_comparePath declared but not defined
+path.h:70:5: Function Path_compareString declared but not defined
+path.h:77:8: Function Path_getDepth declared but not defined
+path.h:86:8: Function Path_getSharedPrefixDepth declared but not defined
+path.h:94:13: Function Path_getComponent declared but not defined
+nodeFT.h:31:5: Function Node_dir_new declared but not defined
+nodeFT.h:47:5: Function Node_file_new declared but not defined
+nodeFT.h:55:8: Function Node_dir_free declared but not defined
+nodeFT.h:61:6: Function Node_file_free declared but not defined
+nodeFT.h:66:8: Function Node_dir_generic declared but not defined
+nodeFT.h:71:8: Function Node_file_generic declared but not defined
+nodeFT.h:76:8: Function Node_getPath declared but not defined
+nodeFT.h:87:9: Function Node_dir_hasChild declared but not defined
+nodeFT.h:91:8: Function Node_dir_getNumChildren declared but not defined
+nodeFT.h:102:9: Function Node_file_hasChild declared but not defined
+nodeFT.h:106:8: Function Node_file_getNumChildren declared but not 
+      defined
+nodeFT.h:114:5: Function Node_dir_getChild declared but not defined
+nodeFT.h:123:5: Function Node_file_getChild declared but not defined
+nodeFT.h:130:11: Function Node_getParent declared but not defined
+nodeFT.h:135:8: Function Node_file_getSize declared but not defined
+nodeFT.h:140:7: Function Node_file_getContent declared but not defined
+nodeFT.h:146:7: Function Node_file_replaceContent declared but not 
+      defined
+nodeFT.h:154:5: Function Node_compare declared but not defined
+nodeFT.h:162:5: Function Node_compareString declared but not defined
+nodeFT.h:171:7: Function Node_toString declared but not defined
+
+I have defined all these functions in different c files.
+
+nodeFT.h:31:5: Function Node_dir_new exported but not declared in header 
+      file
+ A declaration is exported, but does not appear in a header file. (Use
+ -exportheader to inhibit warning)
+nodeFT.h:47:5: Function Node_file_new exported but not declared in 
+      header file
+nodeFT.h:55:8: Function Node_dir_free exported but not declared in 
+      header file
+nodeFT.h:61:6: Function Node_file_free exported but not declared in 
+      header file
+nodeFT.h:66:8: Function Node_dir_generic exported but not declared in 
+      header file
+nodeFT.h:71:8: Function Node_file_generic exported but not declared in 
+      header file
+nodeFT.h:76:8: Function Node_getPath exported but not declared in 
+      header file
+nodeFT.h:87:9: Function Node_dir_hasChild exported but not declared in 
+      header file
+nodeFT.h:91:8: Function Node_dir_getNumChildren exported but not 
+      declared in header file
+nodeFT.h:102:9: Function Node_file_hasChild exported but not declared in 
+      header file
+nodeFT.h:106:8: Function Node_file_getNumChildren exported but not 
+      declared in header file
+nodeFT.h:114:5: Function Node_dir_getChild exported but not declared in 
+      header file
+nodeFT.h:123:5: Function Node_file_getChild exported but not declared in 
+      header file
+nodeFT.h:130:11: Function Node_getParent exported but not declared in 
+      header file
+nodeFT.h:135:8: Function Node_file_getSize exported but not declared in 
+      header file
+nodeFT.h:140:7: Function Node_file_getContent exported but not declared 
+      in header file
+nodeFT.h:146:7: Function Node_file_replaceContent exported but not 
+      declared in header file
+nodeFT.h:154:5: Function Node_compare exported but not declared in 
+      header file
+nodeFT.h:162:5: Function Node_compareString exported but not declared in 
+      header file
+nodeFT.h:171:7: Function Node_toString exported but not declared in 
+      header file
+
+I have declared all these functions in this header file but defined 
+them in a separate c file.
+
+ - nodeFT.c
+dynarray.h:21:12: Function DynArray_new declared but not defined
+  A function or variable is declared, but not defined in any source code 
+      file.
+  (Use -declundef to inhibit warning)
+dynarray.h:27:6: Function DynArray_free declared but not defined
+dynarray.h:33:8: Function DynArray_getLength declared but not defined
+dynarray.h:39:7: Function DynArray_get declared but not defined
+dynarray.h:46:7: Function DynArray_set declared but not defined
+dynarray.h:55:5: Function DynArray_add declared but not defined
+dynarray.h:63:5: Function DynArray_addAt declared but not defined
+dynarray.h:70:7: Function DynArray_removeAt declared but not defined
+dynarray.h:78:6: Function DynArray_toArray declared but not defined
+dynarray.h:87:26: Function DynArray_map declared but not defined
+dynarray.h:98:26: Function DynArray_sort declared but not defined
+dynarray.h:113:27: Function DynArray_search declared but not defined
+dynarray.h:129:28: Function DynArray_bsearch declared but not defined
+path.h:24:5: Function Path_new declared but not defined
+path.h:33:5: Function Path_dup declared but not defined
+path.h:44:5: Function Path_prefix declared but not defined
+path.h:47:6: Function Path_free declared but not defined
+path.h:50:13: Function Path_getPathname declared but not defined
+path.h:56:8: Function Path_getStrLength declared but not defined
+path.h:63:5: Function Path_comparePath declared but not defined
+path.h:70:5: Function Path_compareString declared but not defined
+path.h:77:8: Function Path_getDepth declared but not defined
+path.h:86:8: Function Path_getSharedPrefixDepth declared but not defined
+path.h:94:13: Function Path_getComponent declared but not defined
+checkerFT.h:15:9: Function CheckerFT_NodeDir_isValid declared but not 
+      defined
+checkerFT.h:22:9: Function CheckerFT_NodeFile_isValid declared but not 
+      defined
+checkerFT.h:33:9: Function CheckerFT_isValid declared but not defined
+
+I have defined all these functions in different c files.
+
+nodeFT.h:55:8: Function exported but not used outside nodeFT: 
+Node_dir_free     
+  A declaration is exported, but not used outside this module. 
+  Declaration can use static qualifier. 
+  (Use -exportlocal to inhibit warning)
+   nodeFT.c:439:1: Definition of Node_dir_free
+nodeFT.h:61:6: Function exported but not used outside nodeFT: 
+      Node_file_free
+   nodeFT.c:469:1: Definition of Node_file_free
+nodeFT.h:66:8: Function exported but not used outside nodeFT: 
+      Node_dir_generic
+   nodeFT.c:478:1: Definition of Node_dir_generic
+nodeFT.h:71:8: Function exported but not used outside nodeFT: 
+      Node_file_generic
+   nodeFT.c:487:1: Definition of Node_file_generic
+nodeFT.h:76:8: Function exported but not used outside nodeFT: 
+      Node_getPath
+   nodeFT.c:496:1: Definition of Node_getPath
+nodeFT.h:87:9: Function exported but not used outside nodeFT: 
+      Node_dir_hasChild
+   nodeFT.c:513:1: Definition of Node_dir_hasChild
+nodeFT.h:91:8: Function exported but not used outside nodeFT:
+                  Node_dir_getNumChildren
+   nodeFT.c:522:1: Definition of Node_dir_getNumChildren
+nodeFT.h:102:9: Function exported but not used outside nodeFT:
+                   Node_file_hasChild
+   nodeFT.c:539:1: Definition of Node_file_hasChild
+nodeFT.h:106:8: Function exported but not used outside nodeFT:
+                   Node_file_getNumChildren
+   nodeFT.c:548:1: Definition of Node_file_getNumChildren
+nodeFT.h:154:5: Function exported but not used outside nodeFT: 
+      Node_compare
+   nodeFT.c:643:1: Definition of Node_compare
+nodeFT.h:162:5: Function exported but not used outside nodeFT:
+                   Node_compareString
+   nodeFT.c:653:1: Definition of Node_compareString
+
+I have used all these functions outside this file.
+
+ ------------------------------------------------------------------------
+What warnings does critTer generate on your Part 3 code, and what are
+your disagreements with them? Copy the critTer warnings here, and
+express your disagreement after each warning. If there are no
+warnings, then write "None."
+
+ - checkerFT.h
+None
+
+ - checkerFT.c
+checkerFT.c: line 126: low priority: 
+A loop should consist of fewer than 35 lines;
+this loop consists of 45 lines; consider refactoring
+
+checkerFT.c: line 189: low priority: 
+A loop should consist of fewer than 35 lines;
+this loop consists of 44 lines; consider refactoring
+
+I do not have to address long loops.
+
+checkerFT.c: line 108: low priority: 
+This function definition probably needs more local comments
+
+This function has enough comments for the developers to understand.
+
+checkerFT.c: line 159: low priority: 
+This area is deeply nested at level 4, consider refactoring
+
+checkerFT.c: line 165: low priority: 
+This area is deeply nested at level 4, consider refactoring
+
+checkerFT.c: line 225: low priority: 
+This area is deeply nested at level 4, consider refactoring
+
+checkerFT.c: line 223: low priority: 
+This area is deeply nested at level 4, consider refactoring
+
+I do not have to address deeply nested code.
+
+ - ft.c
+ft.c: line 495: low priority: 
+A loop should consist of fewer than 35 lines;
+this loop consists of 53 lines; consider refactoring
+
+I can ignore long loops.
+
+ft.c: line 407: low priority: 
+A function should consist of fewer than 140 lines;
+this function consists of 149 lines; consider refactoring
+
+I can ignore long functions.
+
+ft.c: line 838: low priority: 
+A file should contain no more than 15 functions;
+this file contains 17 functions
+
+I can ignore long files.
+
+ft.c: line 407: medium priority:
+Do you want to validate 'pvContents' through an assert?
+
+pvContents can be NULL, so we cannot validate.
+
+ft.c: line 660: medium priority:
+Do you want to validate 'pvNewContents' through an assert?
+
+pvNewContents can be NULL, so we cannot validate.
+
+ft.c: line 137: low priority: 
+This function definition probably needs more local comments
+
+ft.c: line 407: low priority: 
+This function definition probably needs more local comments
+
+They have enough comments for the developers to understand.
+
+ft.c: line 837: low priority: 
+A source code file should contain fewer than 500 lines;
+this file contains 838 lines
+
+I can ignore long files.
+
+ft.c: line 520: low priority: 
+This area is deeply nested at level 4, consider refactoring
+
+I can ignore nested code.
+
+ - nodeFT.h
+None
+
+- nodeFT.c
+nodeFT.c: line 668: low priority: 
+A file should contain no more than 15 functions;
+this file contains 26 functions
+
+I can ignore long files.
+
+nodeFT.c: line 280: medium priority:
+Do you want to validate 'oContent' through an assert?
+
+The oContent can be NULL, so you cannot validate it.
+
+nodeFT.c: line 625: medium priority:
+Do you want to validate 'newContent' through an assert?
+
+The newContent can be NULL, so you cannot validate it.
+
+nodeFT.c: line 667: low priority: 
+A source code file should contain fewer than 500 lines;
+this file contains 668 lines
+
+I cna ignore long files.
+
+------------------------------------------------------------------------
+For each of the five faulty BDT implementations required by Step
+1.5, identify the function where there is a bug. You do not have to
+identify the bug itself, only its location, but note that this must be
+the location of the underlying error, which is not necessarily where
+the error manifests itself or is "noticed" by the client.
+
+
+      Executable         Function with the underlying error
+===============================================================
+         ./bdtBad1       BDT_insert 
+                        (it doesn't check that the BDT is initialized)
+---------------------------------------------------------------
+         ./bdtBad2       BDT_freeSubtree 
+                        (it forgets to make child 2 into child 1 
+                        after removing child 1))
+---------------------------------------------------------------
+         ./bdtBad3       BDT_addChild 
+                        (it sets psParent->psChild1 = psParent->psChild1
+                         or psParent->psChild2 = psParent->psChild2 
+                         instead of setting sParent->psChild1 = psChild 
+                         or psParent->psChild2 = psChild, respectively.)
+---------------------------------------------------------------
+         ./bdtBad4       BDT_strlenAccumulate 
+                        (it doesn't add one additional byte ('\n') 
+                        to the sum as described in the comments)
+---------------------------------------------------------------
+         ./bdtBad5       BDT_findNode 
+                        (if (Path_comparePath(BDT_getPath(psFound), 
+                        oPPath)!=0) it forgets to call 
+                        Path_free(oPPath); before returning 
+                        NO_SUCH_PATH)
+===============================================================
+
+------------------------------------------------------------------------
+What are your critiques of the given DT implementations, as
+specified in Step 2.5?
+
+dynaarray.h
+ - since we are considering the growing array, there is no need to have
+   length as an argument of DynArray_new
+ - DynArray_search is probably using linear search in contrast to 
+   bsearch, so the name should be DynArray_lsearch
+path.h
+ - Path_dup is not necessary since we can use Path_prefix and 
+   Path_getDepth to obtain the copy
+ - Path_getStrLength is not necessary since we can use strlen and 
+   Path_getPathname to obtain the length of the string representation
+nodeDTGood.c
+ - Node_new does not check if there is already a root when 
+   oParent == NULL
+------------------------------------------------------------------------
